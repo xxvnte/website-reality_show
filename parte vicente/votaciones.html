@@ -1,10 +1,10 @@
- <!DOCTYPE html>
- <html lang="en">
- <head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
-    <title>votaciones</title>
- </head>
- <body>
+    <title>Votaciones</title>
+</head>
+<body>
     <div class="Votaciones" id="votaciones">
         <h2>Votaciones</h2>
         <table border="1px" style="width: 600px; height: 200px;">
@@ -15,8 +15,8 @@
                 <th style="width: 90px;"> </th>
             </tr>
             <tr>
-                <td>1234</td>
-                <td>eliminacion gran primo</td>
+                <td>1</td>
+                <td id="nombreEvento1"></td>
                 <td>11/11/11</td>
                 <td>
                     <label for="detalles1"></label>
@@ -24,8 +24,8 @@
                 </td>
             </tr>
             <tr>
-                <td>1234</td>
-                <td>eliminacion gran primo</td>
+                <td>2</td>
+                <td id="nombreEvento2"></td>
                 <td>11/11/11</td>
                 <td>
                     <label for="detalles2"></label>
@@ -33,8 +33,8 @@
                 </td>
             </tr>
             <tr>
-                <td>1234</td>
-                <td>eliminacion gran primo</td>
+                <td>3</td>
+                <td id="nombreEvento3"></td>
                 <td>11/11/11</td>
                 <td>
                     <label for="detalles3"></label>
@@ -44,7 +44,15 @@
         </table><br>
     </div>
     <div>
-        <a href="index.html">volver a registro</a>
+        <a href="index.html">Volver al registro</a><br>
+        <a href="paginaprincipal.html">Ir a página principal</a><br>
     </div>
- </body>
- </html>
+
+    <script>
+        // Recupera los datos almacenados en el almacenamiento local y los muestra en la tabla
+        document.getElementById('nombreEvento1').textContent = localStorage.getItem('evento1');
+        document.getElementById('nombreEvento2').textContent = localStorage.getItem('evento2');
+        document.getElementById('nombreEvento3').textContent = localStorage.getItem('evento3');
+    </script>
+</body>
+</html>
