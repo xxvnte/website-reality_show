@@ -5,9 +5,10 @@
     <meta charset="utf-8">
 </head>
 <body>
+
     <div class="Registro" id="registro">
     <h2>Registro</h2>
-    <form action="Registro" method="post">
+    <form>
         <label for="nombre_completo">Nombre completo</label>
         <input type="text" name="nombre_completo" id="nombre_completo" required>
         <br><br>
@@ -17,9 +18,10 @@
         <label for="contrasena">Contraseña</label>
         <input type="password" name="Contraseña" id="contrasena" required>
         <br><br>
-        <input type="submit" value="Registrarse" style="background-color: aqua;">
+        <a href="nueva_pag.html" style="background-color: aqua;">Registrarse</a>
     </form>
     </div>
+
     <br><br>
     <div class="Votaciones" id="votaciones">
         <h2>Votaciones</h2>
@@ -35,8 +37,8 @@
                 <td>eliminacion gran primo</td>
                 <td>11/11/11</td>
                 <td>
-                    <label for="detalles"></label>
-                    <input type="submit" name="Detalles" id="detalles" value="ver detalles">
+                    <label for="detalles1"></label>
+                    <input type="submit" name="Detalles" id="detalles1" value="ver detalles">
                 </td>
             </tr>
             <tr>
@@ -44,8 +46,8 @@
                 <td>eliminacion gran primo</td>
                 <td>11/11/11</td>
                 <td>
-                    <label for="detalles"></label>
-                    <input type="submit" name="Detalles" id="detalles" value="ver detalles">
+                    <label for="detalles2"></label>
+                    <input type="submit" name="Detalles" id="detalles2" value="ver detalles">
                 </td>
             </tr>
             <tr>
@@ -53,8 +55,8 @@
                 <td>eliminacion gran primo</td>
                 <td>11/11/11</td>
                 <td>
-                    <label for="detalles"></label>
-                    <input type="submit" name="Detalles" id="detalles" value="ver detalles">
+                    <label for="detalles3"></label>
+                    <input type="submit" name="Detalles" id="detalles3" value="ver detalles">
                 </td>
             </tr>
         </table><br>
