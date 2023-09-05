@@ -1,0 +1,38 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <title>Votaciones/administradores</title>
+ </head>
+ <body>
+    <h2>Escriba los eventos</h2>
+    <div>
+    <form action="votaciones.html" method="post">
+        <label for="evento1">Ingrese nombre de evento 1</label>
+        <input type="text" id="evento1" name="evento1" required><br>
+        <label for="evento2">Ingrese nombre de evento 2 </label>
+        <input type="text" id="evento2" name="evento2" required><br>
+        <label for="evento3">Ingrese nombre de evento 3</label>
+        <input type="text" id="evento3" name="evento3" required><br>
+        <input type="submit" value="enviar">
+    </form>
+    <a href="votaciones.html">ir a las votaciones</a>
+    </div>
+
+    <script>
+        // Almacena los datos en el almacenamiento local del navegador cuando se envía el formulario
+        document.querySelector('form').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const evento1 = document.getElementById('evento1').value;
+            const evento2 = document.getElementById('evento2').value;
+            const evento3 = document.getElementById('evento3').value;
+
+            localStorage.setItem('evento1', evento1);
+            localStorage.setItem('evento2', evento2);
+            localStorage.setItem('evento3', evento3);
+        });
+    </script>
+
+ </body>
+ </html>
