@@ -41,7 +41,7 @@
               <tbody class="table-group-divider">
                 <th scope="row">1</th>
                 <td id="nombre_evento1"></td>
-                <td>11/11/11</td>
+                <td id="fecha"></td>
                 <td>
                   <nav class="nav">
                     <a class="nav-link" href="#">Ver detalles</a></td>
@@ -50,7 +50,7 @@
             <tr>
                 <th scope="row">2</th>
                 <td id="nombre_evento2"></td>
-                <td>11/11/11</td>
+                <td id="fecha"></td>
                 <td>
                   <nav class="nav">
                     <a class="nav-link" href="#">Ver detalles</a></td>
@@ -59,7 +59,7 @@
             <tr>
                 <th scope="row">3</th>
                 <td id="nombre_evento3"></td>
-                <td>11/11/11</td>
+                <td id="fecha"></td>
                 <td>
                   <nav class="nav">
                     <a class="nav-link" href="#">Ver detalles</a></td>
@@ -73,6 +73,8 @@
         document.getElementById('nombre_evento1').textContent = localStorage.getItem('nombre_evento1');
         document.getElementById('nombre_evento2').textContent = localStorage.getItem('nombre_evento2');
         document.getElementById('nombre_evento3').textContent = localStorage.getItem('nombre_evento3');
+
+        document.getElementById('nombre_evento3').textContent = localStorage.getItem('fecha');
     </script>
      <div class="container">
         <footer class="py-3 my-4">
