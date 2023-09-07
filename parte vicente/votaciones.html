@@ -17,8 +17,8 @@
         
               <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
                 <li><a href="index.html" class="nav-link px-2">Inicio</a></li>
-                <li><a href="#" class="nav-link px-2">Elecciones</a></li>
-                <li><a href="#" class="nav-link px-2">Crear elección</a></li>
+                <li><a href="votar_evento.html" class="nav-link px-2">Elecciones</a></li>
+                <li><a href="votaciones_admin.html" class="nav-link px-2">Crear elección</a></li>
               </ul>
         
               <div class="col-md-3 text-end">
@@ -29,41 +29,43 @@
           </div>
         </div>
     <div class="Votaciones" id="votaciones">
-        <h2>Votaciones</h2>
-        <table border="1px" style="width: 600px; height: 200px;">
+        <table class="table table-bordered">
+          <thead>
             <tr>
-                <th>ID evento</th>
-                <th>Nombre del evento</th>
-                <th>Fecha de creación</th>
-                <th style="width: 90px;"> </th>
+                <th scope="col">ID evento</th>
+                <th scope="col">Nombre del evento</th>
+                <th scope="col">Fecha de creación</th>
+                <th scope="col"> </th>
             </tr>
-            <tr>
-                <td>1</td>
+          </thead>
+              <tbody class="table-group-divider">
+                <th scope="row">1</th>
                 <td id="nombreEvento1"></td>
                 <td>11/11/11</td>
                 <td>
-                    <label for="detalles1"></label>
-                    <input type="submit" name="Detalles" id="detalles1" value="ver detalles">
-                </td>
+                  <nav class="nav">
+                    <a class="nav-link" href="#">Ver detalles</a></td>
+                  </nav></td>
             </tr>
             <tr>
-                <td>2</td>
+                <th scope="row">2</th>
                 <td id="nombreEvento2"></td>
                 <td>11/11/11</td>
                 <td>
-                    <label for="detalles2"></label>
-                    <input type="submit" name="Detalles" id="detalles2" value="ver detalles">
-                </td>
+                  <nav class="nav">
+                    <a class="nav-link" href="#">Ver detalles</a></td>
+                  </nav></td>
             </tr>
             <tr>
-                <td>3</td>
+                <th scope="row">3</th>
                 <td id="nombreEvento3"></td>
                 <td>11/11/11</td>
                 <td>
-                    <label for="detalles3"></label>
-                    <input type="submit" name="Detalles" id="detalles3" value="ver detalles">
-                </td>
+                  <nav class="nav">
+                    <a class="nav-link" href="#">Ver detalles</a></td>
+                  </nav></td>
             </tr>
+          </tbody>
         </table><br>
     </div>
     <script>
