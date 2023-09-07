@@ -2,21 +2,22 @@
  <html lang="en">
  <head>
     <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
     <title>Votaciones/administradores</title>
  </head>
- <body>
-    <h2>Escriba los eventos</h2>
+ <body class="d-flex align-items justify-content-center py-4 text-emphasis-primary" style="min-height: 100vh;">
     <div>
+    <h2 class="h3 mb-3 fw-normal">Configuración eventos</h2>
     <form action="votaciones.html" method="post">
         <label for="evento1">Ingrese nombre de evento 1</label>
-        <input type="text" id="evento1" name="evento1" required><br>
+        <input class="form-control" type="text" id="evento1" name="evento1" required><br>
         <label for="evento2">Ingrese nombre de evento 2 </label>
-        <input type="text" id="evento2" name="evento2" required><br>
+        <input class="form-control" type="text" id="evento2" name="evento2" required><br>
         <label for="evento3">Ingrese nombre de evento 3</label>
-        <input type="text" id="evento3" name="evento3" required><br>
-        <input type="submit" value="enviar">
+        <input class="form-control" type="text" id="evento3" name="evento3" required><br>
+        <input class="form-control" type="submit" value="enviar">
+        <a href="votaciones.html">ir a las votaciones</a>
     </form>
-    <a href="votaciones.html">ir a las votaciones</a>
     </div>
 
     <script>
