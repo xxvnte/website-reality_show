@@ -39,6 +39,8 @@
        <label for="candidato_3c">candidato 3</label>
        <input class="form-control" type="text" id="candidato_3c" name="candidato_3c" required><br>
 
+       <label for="fecha">Ingrese la fecha actual</label>
+       <input class="form-control" type="date" id="fecha" name="fecha" required><br>
        <input class="form-control" type="submit" style="background-color: aqua;" value="enviar"><br>
        <a href="votaciones.html" class="nav-link">ir a las votaciones</a>
     </form>
@@ -64,6 +66,8 @@
            const candidato_2c = document.getElementById('candidato_2c').value;
            const candidato_3c = document.getElementById('candidato_3c').value;
 
+           const fecha = document.getElementById('fecha').value;
+
            localStorage.setItem('nombre_evento1', nombre_evento1);
            localStorage.setItem('candidato_1a', candidato_1a);
            localStorage.setItem('candidato_2a', candidato_2a);
@@ -78,6 +82,8 @@
            localStorage.setItem('candidato_1c', candidato_1c);
            localStorage.setItem('candidato_2c', candidato_2c);
            localStorage.setItem('candidato_3c', candidato_3c);
+
+           localStorage.setItem('fecha', fecha);
        });
    </script>
 
