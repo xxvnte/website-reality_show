@@ -45,19 +45,31 @@
                 <td id="fecha1"></td>
                 <td>
                              <!-- Button trigger modal -->
-<button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#miModal">Ver detalles
+<button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#miModal1">Ver detalles
   </button>
   
   <!-- Modal -->
-  <div class="modal fade" id="miModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal fade" id="miModal1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h1 class="modal-title fs-5" id="exampleModalLabel"><b>Visulizar evento</b></h1>
+          <h1 class="modal-title fs-5" id="exampleModalLabel"><b>Visualizar evento</b></h1>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <p><b>nombre_evento1</b></p>
+          <p><b id="event1"></b></p><br>
+          <p id="candidato_1a">
+            <p> - 0 votos</p> <!-- aqui deberia ir el id de cantidad de votos de tal candidato -->
+          </p>
+          <p id="candidato_2a">
+            <p> - 0 votos</p> <!-- aqui deberia ir el id de cantidad de votos de tal candidato -->
+          </p>
+          <p id="candidato_3a">
+            <p> - 0 votos</p> <!-- aqui deberia ir el id de cantidad de votos de tal candidato -->
+          </p><br>
+          <p> <b>Estado del evento:</b> 
+            <p>Finalizado</p> <!-- aqui deberia ir el id de estado del evento -->
+          </p>
         </div>
       </div>
     </div>
@@ -70,19 +82,31 @@
                 <td id="fecha2"></td>
                 <td>
                                             <!-- Button trigger modal -->
-<button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#miModal">Ver detalles
+<button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#miModal2">Ver detalles
   </button>
   
   <!-- Modal -->
-  <div class="modal fade" id="miModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal fade" id="miModal2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h1 class="modal-title fs-5" id="exampleModalLabel"><b>Visulizar evento</b></h1>
+          <h1 class="modal-title fs-5" id="exampleModalLabel"><b>Visualizar evento</b></h1>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <p><b>nombre_evento2</b></p>
+          <p><b id="event2"></b></p><br>
+          <p id="candidato_1b">
+            <p> - 0 votos</p> <!-- aqui deberia ir el id de cantidad de votos de tal candidato -->
+          </p>
+          <p id="candidato_2b">
+            <p> - 0 votos</p> <!-- aqui deberia ir el id de cantidad de votos de tal candidato -->
+          </p>
+          <p id="candidato_3b">
+            <p> - 0 votos</p> <!-- aqui deberia ir el id de cantidad de votos de tal candidato -->
+          </p><br>
+          <p> <b>Estado del evento:</b> 
+            <p>Finalizado</p> <!-- aqui deberia ir el id de estado del evento -->
+          </p>
         </div>
       </div>
     </div>
@@ -95,19 +119,31 @@
                 <td id="fecha3"></td>
                 <td>
                             <!-- Button trigger modal -->
-<button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#miModal">Ver detalles
+<button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#miModal3">Ver detalles
   </button>
   
   <!-- Modal -->
-  <div class="modal fade" id="miModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal fade" id="miModal3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h1 class="modal-title fs-5" id="exampleModalLabel"><b>Visulizar evento</b></h1>
+          <h1 class="modal-title fs-5" id="exampleModalLabel"><b>Visualizar evento</b></h1>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <p><b>nombre_evento3</b></p>
+          <p><b id="event3"></b></p><br>
+          <p id="candidato_1c">
+            <p> - 0 votos</p> <!-- aqui deberia ir el id de cantidad de votos de tal candidato -->
+          </p>
+          <p id="candidato_2c">
+            <p> - 0 votos</p> <!-- aqui deberia ir el id de cantidad de votos de tal candidato -->
+          </p>
+          <p id="candidato_3c">
+            <p> - 0 votos</p> <!-- aqui deberia ir el id de cantidad de votos de tal candidato -->
+          </p><br>
+          <p> <b>Estado del evento:</b> 
+            <p>Finalizado</p> <!-- aqui deberia ir el id de estado del evento -->
+          </p>
         </div>
       </div>
     </div>
@@ -126,6 +162,22 @@
         document.getElementById('fecha1').textContent = localStorage.getItem('fecha');
         document.getElementById('fecha2').textContent = localStorage.getItem('fecha');
         document.getElementById('fecha3').textContent = localStorage.getItem('fecha');
+
+        document.getElementById('event1').textContent = localStorage.getItem('nombre_evento1');
+        document.getElementById('event2').textContent = localStorage.getItem('nombre_evento2');
+        document.getElementById('event3').textContent = localStorage.getItem('nombre_evento3');
+
+        document.getElementById('candidato_1a').textContent = localStorage.getItem('candidato_1a');
+        document.getElementById('candidato_2a').textContent = localStorage.getItem('candidato_2a');
+        document.getElementById('candidato_3a').textContent = localStorage.getItem('candidato_3a');
+
+        document.getElementById('candidato_1b').textContent = localStorage.getItem('candidato_1b');
+        document.getElementById('candidato_2b').textContent = localStorage.getItem('candidato_2b');
+        document.getElementById('candidato_3b').textContent = localStorage.getItem('candidato_3b');
+
+        document.getElementById('candidato_1c').textContent = localStorage.getItem('candidato_1c');
+        document.getElementById('candidato_2c').textContent = localStorage.getItem('candidato_2c');
+        document.getElementById('candidato_3c').textContent = localStorage.getItem('candidato_3c');
     </script>
      <div class="container">
         <footer class="py-3 my-4">
