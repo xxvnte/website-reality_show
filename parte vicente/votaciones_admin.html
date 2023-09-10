@@ -5,45 +5,79 @@
    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
    <title>Votaciones/administradores</title>
 </head>
-<h2 class="h3 mb-3 fw-normal text-center">Configuración eventos</h2>
 <body>
-   <div class="d-flex align-items justify-content py-4" style="min-height: 100vh;">
-   <form action="votaciones.html" method="post">
-    <h4 class="h3 mb-3 fw-normal text-center">Evento 1</h4>
-       <label for="nombre_evento1">Nombre del evento</label>
-       <input class="form-control" type="text" id="nombre_evento1" name="nombre_evento1" required><br>
-       <label for="candidato_1a">candidato 1 </label>
-       <input class="form-control" type="text" id="candidato_1a" name="candidato_1a" required><br>
-       <label for="candidato_2a">candidato 2</label>
-       <input class="form-control" type="text" id="candidato_2a" name="candidato_2a" required><br>
-       <label for="candidato_3a">candidato 3</label>
-       <input class="form-control" type="text" id="candidato_3a" name="candidato_3a" required><br>
-
-    <h4 class="h3 mb-3 fw-normal text-center">Evento 2</h4>
-       <label for="nombre_evento2">Nombre del evento</label>
-       <input class="form-control" type="text" id="nombre_evento2" name="nombre_evento2" required><br>
-       <label for="candidato_1b">candidato 1 </label>
-       <input class="form-control" type="text" id="candidato_1b" name="candidato_1b" required><br>
-       <label for="candidato_2b">candidato 2</label>
-       <input class="form-control" type="text" id="candidato_2b" name="candidato_2b" required><br>
-       <label for="candidato_3b">candidato 3</label>
-       <input class="form-control" type="text" id="candidato_3b" name="candidato_3b" required><br>
-
-    <h4 class="h3 mb-3 fw-normal text-center">Evento 3</h4>
-       <label for="nombre_evento3">Nombre del evento</label>
-       <input class="form-control" type="text" id="nombre_evento3" name="nombre_evento3" required><br>
-       <label for="candidato_1c">candidato 1 </label>
-       <input class="form-control" type="text" id="candidato_1c" name="candidato_1c" required><br>
-       <label for="candidato_2c">candidato 2</label>
-       <input class="form-control" type="text" id="candidato_2c" name="candidato_2c" required><br>
-       <label for="candidato_3c">candidato 3</label>
-       <input class="form-control" type="text" id="candidato_3c" name="candidato_3c" required><br>
-
-       <label for="fecha">Ingrese la fecha actual</label>
-       <input class="form-control" type="date" id="fecha" name="fecha" required><br>
-       <input class="form-control" type="submit" style="background-color: aqua;" value="enviar"><br>
-       <a href="votaciones.html" class="nav-link">ir a las votaciones</a>
-    </form>
+   <div class="shadow p-3 mb-5 bg-body-tertiary rounded">
+      <div class="container">
+        <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+          <div class="col-md-3 mb-2 mb-md-0">
+            <a href="/" class="d-inline-flex link-body-emphasis text-decoration-none">
+              <svg class="bi" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>
+            </a>
+          </div>
+    
+          <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+            <li><a href="file:///C:/Users/sevit/OneDrive/Escritorio/pagina_principal.html#" class="nav-link px-2">Inicio</a></li>
+            <li><a href="#" class="nav-link px-2">Elecciones</a></li>
+            <li><a href="#" class="nav-link px-2">Crear elección</a></li>
+          </ul>
+    
+          <div class="col-md-3 text-end">
+            <button type="button" class="btn btn-outline-primary me-2">Registrarse</button>
+            <button type="button" class="btn btn-primary">Iniciar Sesión</button>
+          </div>
+        </header>
+      </div>
+   </div>
+   <h2 class="h3 mb-3 fw-normal text-center">Configuración eventos</h2>
+   <div class="container">
+      <form action="votaciones.html" method="post">
+         <div class="d-flex align-items justify-content py-4 d-flex justify-content-center">
+            <div class="mx-4 border p-4 shadow" >
+               <h4 class="h3 mb-3 fw-normal text-center">Evento 1</h4>
+               <label for="nombre_evento1">Nombre del evento</label>
+               <input class="form-control" type="text" id="nombre_evento1" name="nombre_evento1" required><br>
+               <label for="candidato_1a">candidato 1 </label>
+               <input class="form-control" type="text" id="candidato_1a" name="candidato_1a" required><br>
+               <label for="candidato_2a">candidato 2</label>
+               <input class="form-control" type="text" id="candidato_2a" name="candidato_2a" required><br>
+               <label for="candidato_3a">candidato 3</label>
+               <input class="form-control" type="text" id="candidato_3a" name="candidato_3a" required><br>
+            </div>
+            <div class="mx-4 border p-4 shadow">
+               <h4 class="h3 mb-3 fw-normal text-center">Evento 2</h4>
+               <label for="nombre_evento2">Nombre del evento</label>
+               <input class="form-control" type="text" id="nombre_evento2" name="nombre_evento2" required><br>
+               <label for="candidato_1b">candidato 1 </label>
+               <input class="form-control" type="text" id="candidato_1b" name="candidato_1b" required><br>
+               <label for="candidato_2b">candidato 2</label>
+               <input class="form-control" type="text" id="candidato_2b" name="candidato_2b" required><br>
+               <label for="candidato_3b">candidato 3</label>
+               <input class="form-control" type="text" id="candidato_3b" name="candidato_3b" required><br>
+            </div>
+            <div class="mx-4 border p-4 shadow">
+               <h4 class="h3 mb-3 fw-normal text-center">Evento 3</h4>
+               <label for="nombre_evento3">Nombre del evento</label>
+               <input class="form-control" type="text" id="nombre_evento3" name="nombre_evento3" required><br>
+               <label for="candidato_1c">candidato 1 </label>
+               <input class="form-control" type="text" id="candidato_1c" name="candidato_1c" required><br>
+               <label for="candidato_2c">candidato 2</label>
+               <input class="form-control" type="text" id="candidato_2c" name="candidato_2c" required><br>
+               <label for="candidato_3c">candidato 3</label>
+               <input class="form-control" type="text" id="candidato_3c" name="candidato_3c" required><br>
+            </div>
+         </div>
+         <div class="container">
+            <div class="d-flex justify-content-center align-items-center">
+               <div>
+                  <label for="fecha" class="sr-only">Fecha actual</label>
+                  <input class="form-control-sm form-control-xs mb-2" type="date" id="fecha" name="fecha" required>
+                  <button class="btn btn-sm btn-info" type="submit">Enviar</button>
+                  <a href="votaciones.html" class="btn btn-sm nav-link">Ir a las votaciones</a> 
+               </div>
+               
+            </div>  
+         </div>
+      </form>
    </div>
 
    <script>
