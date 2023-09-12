@@ -48,7 +48,7 @@
             <td>Finalizado</td>
             <td>
             <nav class="nav">
-              <a href="#" class="nav-link disabled" >Votar</a></td>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#miModal1">Votar</button>
             </nav>
           </tr>
           <tr>
@@ -57,7 +57,7 @@
             <td>En curso</td>
             <td>
             <nav class="nav">
-              <a class="nav-link" href="#">Votar</a></td>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#miModal2">Votar</button>
             </nav></td>
           </tr>
           <tr>
@@ -66,7 +66,7 @@
             <td>En curso</td>
             <td>
             <nav class="nav">
-              <a class="nav-link" href="#">Votar</a></td>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#miModal3">Votar</button>
             </nav>
           </tr>
         </tbody>
@@ -80,6 +80,81 @@
       document.getElementById('nombre_evento2').textContent = localStorage.getItem('nombre_evento2');
       document.getElementById('nombre_evento3').textContent = localStorage.getItem('nombre_evento3');
   </script>
+  
+<!-- Modal1 -->
+<div class="modal fade" id="miModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Votar Encuesta</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <h5 class="mb-4 text-center">Nominados por convivencia</h5>
+        <h5 class="mb-4 fw-normal text-center">Selecciona una opción</h5> 
+        <ul class="h6 fw-normal">
+          <li class="py-3">Primera opción</li>
+          <li class="py-3">Segunda opción</li>
+          <li class="py-3">Tercera opción </li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary">Votar</button>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+  
+<!-- Modal2 -->
+<div class="modal fade" id="miModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Votar Encuesta</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <h5 class="mb-4 text-center">Nominados por convivencia</h5>
+        <h5 class="mb-4 fw-normal text-center">Selecciona una opción</h5> 
+        <ul class="h6 fw-normal">
+          <li class="py-3">Primera opción</li>
+          <li class="py-3">Segunda opción</li>
+          <li class="py-3">Tercera opción </li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary">Votar</button>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+  
+<!-- Modal3 -->
+<div class="modal fade" id="miModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Votar Encuesta</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <h5 class="mb-4 text-center">Nominados por convivencia</h5>
+        <h5 class="mb-4 fw-normal text-center">Selecciona una opción</h5> 
+        <ul class="h6 fw-normal">
+          <li class="py-3">Primera opción</li>
+          <li class="py-3">Segunda opción</li>
+          <li class="py-3">Tercera opción </li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary">Votar</button>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
 
   <div class="container">
         <footer class="py-3 my-4">
