@@ -1,5 +1,5 @@
 # webpage-reality_show
-Interfaz visual de la pagina web
+Interfaz visual de la página web
 
 ![WhatsApp Image 2024-07-19 at 3 30 22 PM](https://github.com/user-attachments/assets/663f7dd4-2999-48bc-8cc6-83fd5e299aee)
 ![WhatsApp Image 2024-07-19 at 3 30 49 PM](https://github.com/user-attachments/assets/55290c4f-3330-4684-826d-58de42cade87)
