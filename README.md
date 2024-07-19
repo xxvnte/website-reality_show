@@ -7,3 +7,5 @@ Interfaz visual de la página web
 ![WhatsApp Image 2024-07-19 at 3 32 47 PM](https://github.com/user-attachments/assets/03cc9af6-d7ec-4b71-a89d-492966da2d74)
 ![WhatsApp Image 2024-07-19 at 3 33 05 PM](https://github.com/user-attachments/assets/b2e79d4f-a8bd-4c52-8143-f85ecfc08ccc)
 ![WhatsApp Image 2024-07-19 at 3 35 06 PM](https://github.com/user-attachments/assets/c9400101-c2ef-40dd-a780-646606df17d9)
+![WhatsApp Image 2024-07-19 at 4 54 33 PM](https://github.com/user-attachments/assets/6d704563-70b1-4db5-9274-825e13b556d6)
+
