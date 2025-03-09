@@ -1,0 +1,38 @@
+(<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Actualizar estado de eventos</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+<body>
+  {{> barrita_de_arriba}}
+  <div class="container">
+    <h1 class="text-center">Actualizar estado de eventos</h1>
+    <form action="/eventos/actualizarEstado" method="post">
+      <div class="form-group">
+        <label for="evento">Selecciona el evento que quieres modificar:</label>
+        <select id="evento" name="id" class="form-control" required>
+          {{#each encuestas}}
+  <option value="{{this._id}}">{{this.nombre}}</option>
+{{/each}}
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="estado">Selecciona el nuevo estado del evento:</label>
+        <select id="estado" name="estado" class="form-control" required>
+          <option value="true">En curso</option>
+          <option value="false">Finalizado</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <button type="submit" class="btn btn-primary">Actualizar</button>
+      </div>
+    </form>
+  </div>
+  {{> footer }}
+
+  <script src="/evento_actualizo.js"></script>
+</body>
+</html>
