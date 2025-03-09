@@ -98,7 +98,6 @@ app.get('/votaciones_main', async (req, res) => {
   try {
     let encuestas = await Evento.find().populate('candidato1 candidato2 candidato3').lean();
 
-    // Obtén la cantidad de votos para cada candidato
     for (let encuesta of encuestas) {
       encuesta.votosCandidato1 = await Voto.countDocuments({ candidato: encuesta.candidato1._id });
       encuesta.votosCandidato2 = await Voto.countDocuments({ candidato: encuesta.candidato2._id });
